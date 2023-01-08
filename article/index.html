@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Namanganliklar24-Article</title>
+  <title>N24-Article</title>
 <!-- GOOGLE FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,80 +15,97 @@
 </head>
 <body>
 
-<main>
-<section class="header">
-<div class="container header-container">
-      <a class="logo" href="/index.html">NAMANGANLIKLAR 24</a>
+  <!-- SITE HEADER -->
+  <section class="site-header">
 
-    <ul class="curency">
-      <li class="dollor">
-        <span>$</span>10137.2</li>
-      <li class="rubl">
-        <span>Р</span> 138.26</li>
-    </ul>
-    <div class="search">
-      <img class="search-img" src="img/search.png" alt="">
-    <input class="search-input" type="text" placeholder="Поиск">
-    </div>
+    <!-- SITE HEADER TOP -->
+    <div class="site-header-top">
+      <div class="container site-header-top-container">
+        <!-- LOGO -->
+        <a class="site-header-logo" href="/index.html">
+          <img class="site-header-logo-img" src="/img/logo.svg" alt="" width="264" height="28">
+      </a>
 
-    <div class="language">
-    <a class="uz" href="#">УЗ</a>
-    <a class="ru" href="#">РУ</a>
-    </div>
-
-    <a class="login-link" href="#">Войти</a>
-</div>
-</section>
-
-<section class="menu">
-<div class="container menu-container">
-    <ul class="menu-list">
-      <li class="menu-item"><a class="menu-link" href="/index.html">Главное</a>
+        <!-- CARENCY RATES -->
+    <ul class="currency-retes">
+      <li class="currency-retes-item">
+        <b class="currency-retes-type">$</b>
+        <span class="currency-retes-value">10137.2</span>
       </li>
-      <li class="menu-item"><a class="menu-link" href="/list/index.html">Интересное</a>
-      </li>
-      <li class="menu-item"><a class="menu-link" href="#">Экономика</a>
-      </li>
-      <li class="menu-item"><a class="menu-link" href="#">Политика</a>
-      </li>
-      <li class="menu-item"><a class="menu-link" href="#">Общество</a>
-      </li>
-      <li class="menu-item"><a class="menu-link" href="#">Технологии</a>
-      </li>
-      <li class="menu-item"><a class="menu-link" href="#">Спорт</a>
-      </li>
-      <li class="menu-item"><a class="menu-link" href="#">Культура</a>
-      </li>
-      <li class="menu-item"><a class="menu-link" href="#">Происшествия</a>
-      </li>
-      <li class="menu-item"><a class="menu-link" href="#">Наука</a>
+      <li class="currency-retes-item">
+        <b class="currency-retes-type">Р</b>
+        <span class="currency-retes-value">138.26</span>
       </li>
     </ul>
-<hr class="menu-line">
 
-</div>
-</section>
+    <!-- GLOBAL SEARCH FORM -->
+    <form class="global-search-form"  action="https://echo.htmlacademy.ru" method="GET">
+      <!-- <img class="global-search-form-img" src="img/search.png" alt=""> -->
+      <input class="global-search-form-input" type="search" name="search" placeholder="Поиск" aria-label="Поиск" required>
+      </form>
 
-<!-- ARTICLE section -->
-<section class="world-news">
-  <div class="container">
+        <!-- LANGUAGE -->
+    <div class="lang-toggle">
+      <a class="lang-toggle-link lang-toggle-link-active" href="index.html">УЗ</a>
+      <a class="lang-toggle-link" href="index.html/ru">РУ</a>
+      </div>
 
-    <div class="layout-2-1">
+    <!-- SITE HEADER AUTH -->
+    <a class="button button-primary" href="#">Войти</a>
+    </div>
+    </div>
 
-<div class="global-news">
+      <!-- NAVBAR -->
+
+      <div class="container sitenav-container">
+        <nav class="sitenav sitenav-article ">
+          <ul class="sitenav-list">
+            <li class="sitenav-item"><a class="sitenav-link" href="/index.html">Главное</a>
+            </li>
+            <li class="sitenav-item"><a class="sitenav-link" href="list/index.html">Интересное</a>
+            </li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Экономика</a>
+            </li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Политика</a>
+            </li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Общество</a>
+            </li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Технологии</a>
+            </li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Спорт</a>
+            </li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Культура</a>
+            </li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Происшествия</a>
+            </li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Наука</a>
+            </li>
+          </ul>
 
 
+      </nav>
 
-  <div class="new-list-container">
+      </div>
+    </section>
 
- <div class="card-source">
-            <img class="card-logo" src="/img/list/logo8.png" alt="" width="30" height="30">
-            <span class="card-logo-action article-action">FBM.ru 22:23</span>
+<main class="main-content">
+<div class="container">
+
+          <div class="layout-2-1">
+          <div class="layout-2-1-main">
+          <section class="global-news">
+
+            <div class="site-top-source">
+            <img class="site-top-source-img" src="/img/list/logo8.png" alt="" width="30" height="30">
+            <div class="article-card-horizontal-source-time site-top-source-time">
+            <span class="card-logo-action article-action">FBM.ru </span>
+            <time datetime="22:23:00">22:23</time>
           </div>
-          <h2 class="global-news-heading article-heading">Илон Маск принял участие во Всемирной сетевой конференции в Китае</h2>
- <img class="article-img" src="../img/Rectangle91.jpg" alt="" srcset="../img/Rectangle91.jpg 1x, ../img/Rectangle91@2x.jpg 2x" width="878" height="330">
+          </div>
 
-        <div class="article-box">
+          <h2 class="global-news-heading site-article-heading">Илон Маск принял участие во Всемирной сетевой конференции в Китае</h2>
+          <div class="news-list">
+ <img class="article-img" src="../img/Rectangle91.jpg" alt="" srcset="../img/Rectangle91.jpg 1x, ../img/Rectangle91@2x.jpg 2x" width="797" height="300">
           <div class="news-list-action">
           <p class="article-text">Илон Маск (Elon Musk, Руководитель фирмы Tesla и других проектов) уже второй раз за полторы недели обратился к китайским правящим кругам и гражданам. В видеоролике он уверил их в своей готовности инвестировать средства в развитие и расширять бизнес на территории этой страны. Особое внимание будет уделяться небезопасности обрабатываемых данных.
           <br><br>
@@ -98,62 +115,75 @@
           <br><br>В ближайшее время Tesla собирается не только сделать шире объёмы производства автомобилей на электрической тяге в шанхайском филиале, но и разработать силами местной студии недорогую модель электрического автомобиля (стоимостью менее 25 000 долларов).
           <br><br> Уже в настоящий момент собранные в Китайской Народной Республике электрокары Tesla Model Y и Model 3 поставляются на экспорт в Европу.</p>
           </div>
+          </div>
+  </section>
         </div>
 
 
+
+<!-- SIDEBAR NEWS CARD -->
+<div class="layout-2-1-sidebar article-layout-2-1-sidebar">
+  <section class="layout-2-1-sidebar-item sidebar-news-card">
+    <h2 class="sidebar-news-card-heading">Главное</h2>
+
+    <ul class="sidebar-news-card-list">
+      <li class="sidebar-news-card-item">
+        <h3 class="sidebar-news-card-title">
+          <a class="sidebar-news-card-link" href="">В Фергане создадут узбекско-пакистанский университет</a>
+        </h3>
+        <div class="sidebar-news-card-source-time">
+          <span class="sidebar-news-card-source">Sputnik Узбекистан</span>
+          <time datetime="14:09:00">14:09</time>
+         </div>
+      </li>
+      <li class="sidebar-news-card-item">
+        <h3 class="sidebar-news-card-title">
+          <a class="sidebar-news-card-link" href="">Узбекистан утвердил соглашение о содействии занятости в странах СНГ</a>
+        </h3>
+        <div class="sidebar-news-card-source-time">
+          <span class="sidebar-news-card-source">ИА Красная Весна </span>
+          <time datetime="10:19:00">10:19</time>
+         </div>
+      </li>
+      <li class="sidebar-news-card-item">
+        <h3 class="sidebar-news-card-title">
+          <a class="sidebar-news-card-link" href="">В Узбекистане увеличиваются очереди за автомобилями UzAuto</a>
+        </h3>
+        <div class="sidebar-news-card-source-time">
+          <span class="sidebar-news-card-source">Северная газета (Армянск) </span>
+          <time datetime="13:50:00">13:50</time>
+         </div>
+      </li>
+      <li class="sidebar-news-card-item">
+        <h3 class="sidebar-news-card-title">
+          <a class="sidebar-news-card-link" href="">Минтуризма опровергло приостановку выплат за шаги</a>
+        </h3>
+        <div class="sidebar-news-card-source-time">
+          <span class="sidebar-news-card-source">Sputnik Узбекистан  </span>
+          <time datetime="14:32:00">14:32</time>
+         </div>
+      </li>
+    </ul>
+  </section>
+
+  <aside class="layout-2-1-sidebar-item sidebar-ad">
+    <a class="sidebar-ad-link" href="#" target="_blank">
+      <img class="sidebar-ad-img" src="/img/sale.jpg" alt="" width="393" height="338" srcset="/img/sale.jpg 1x, /img/sale@2x.jpg 2x">
+    </a>
+  </aside>
+</div>
 </div>
 
-<hr class="menu-line article-line">
+<h2 class="article-news-heading">По вашим интересам</h2>
 
-</div>
-
-
-
-<div class="site-layout">
-<div class="site-layout-container">
-  <h2 class="site-layout-link-heading">Главное</h2>
-
-  <div class="site-layout-list">
-  <a class="site-layout-link" href="#">В Фергане создадут узбекско-пакистанский университет</a>
-  <p class="site-layout-link-source">Sputnik Узбекистан 14:09</p>
-  <hr class="site-layout-link-line">
-  </div>
-
-  <div class="site-layout-list">
-  <a class="site-layout-link" href="#">Узбекистан утвердил соглашение о содействии занятости в странах СНГ</a>
-  <p class="site-layout-link-source">ИА Красная Весна 10:19</p>
-  <hr class="site-layout-link-line">
-  </div>
-
-  <div class="site-layout-list">
-    <a class="site-layout-link" href="#">В Узбекистане увеличиваются очереди за автомобилями UzAuto</a>
-    <p class="site-layout-link-source">Северная газета (Армянск) 13:50</p>
-    <hr class="site-layout-link-line">
-    </div>
-
-    <div class="site-layout-list">
-      <a class="site-layout-link" href="#">Минтуризма опровергло приостановку выплат за шаги</a>
-      <p class="site-layout-link-source">Sputnik Узбекистан 14:32</p>
-      </div>
-
-</div>
-<img class="site-layout-link-img" src="../img/sale.jpg" alt="" srcset="../img/sale.jpg 1x, img/sale@2x.jpg 2x" width="393" height="338">
-
-
-
-</div>
-
-</div>
-
-<h2 class="global-news-heading">По вашим интересам</h2>
-
- <div class="article-cards">
+ <div class="article-cards article-cards-box">
   <div class="card article-card">
     <a class="card-heading" href="#">Стали известны ёмкости аккумуляторов всех моделей iPhone 13</a>
     <p class="card-action">Во время презентации iPhone 13 Apple придала большое значения...</p>
     <div class="card-source">
       <img class="card-logo" src="/img/card/cardlogo4.jpg" alt="" width="20" height="20">
-      <span class="card-logo-action">ИА Красная Весна 15:55</span>
+      <span class="card-logo-action">ИА Красная Весна </span>
+      <time datetime="15:55:00">15:55</time>
     </div>
   </div>
 
@@ -162,23 +192,25 @@
   <p class="card-action">Во время презентации iPhone 13 Apple придала большое значение...</p>
   <div class="card-source">
     <img class="card-logo" src="/img/card/cardlogo5.jpg" alt="" width="20" height="20">
-    <span class="card-logo-action">Lenta.ru 10:54</span>
+    <span class="card-logo-action">Lenta.ru </span>
+    <time datetime="10:54:00">10:54</time>
   </div>
   </div>
 
   <div class="card article-card">
-  <a class="card-heading" href="#">Китайская марка JAC повысила цены на лифтбек и пикап в России</a>
+  <a class="card-heading" href="#">Китайская марка JAC повысила цены на лифтбек и пикап в <br> России</a>
   <p class="card-action">Две модели китайского бренда JAC из пяти, представленных на российском...</p>
   <div class="card-source">
     <img class="card-logo" src="/img/card/cardlogo7.jpg" alt="" width="20" height="20">
-    <span class="card-logo-action">Тарантас Ньюс 10:44</span>
+    <span class="card-logo-action">Тарантас Ньюс </span>
+    <time datetime="10:44:00">10:44</time>
   </div>
   </div>
 
  </div>
 
 </div>
-</section>
+</main>
 
 
 

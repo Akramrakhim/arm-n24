@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Namanganliklar24-Article</title>
+  <title>N24-Contact</title>
 <!-- GOOGLE FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,71 +15,88 @@
 </head>
 <body>
 
-<main>
-<section class="header">
-<div class="container header-container">
-      <a class="logo" href="/index.html">NAMANGANLIKLAR 24</a>
+  <!-- SITE HEADER -->
+  <section class="site-header">
 
-    <ul class="curency">
-      <li class="dollor">
-        <span>$</span>10137.2</li>
-      <li class="rubl">
-        <span>Р</span> 138.26</li>
-    </ul>
-    <div class="search">
-      <img class="search-img" src="img/search.png" alt="">
-    <input class="search-input" type="text" placeholder="Поиск">
-    </div>
+    <!-- SITE HEADER TOP -->
+    <div class="site-header-top">
+      <div class="container site-header-top-container">
+        <!-- LOGO -->
+        <a class="site-header-logo" href="/index.html">
+          <img class="site-header-logo-img" src="/img/logo.svg" alt="" width="264" height="28">
+      </a>
 
-    <div class="language">
-    <a class="uz" href="#">УЗ</a>
-    <a class="ru" href="#">РУ</a>
-    </div>
-
-    <a class="login-link" href="#">Войти</a>
-</div>
-</section>
-
-<section class="menu">
-<div class="container menu-container">
-    <ul class="menu-list">
-      <li class="menu-item"><a class="menu-link" href="/index.html">Главное</a>
+        <!-- CARENCY RATES -->
+    <ul class="currency-retes">
+      <li class="currency-retes-item">
+        <b class="currency-retes-type">$</b>
+        <span class="currency-retes-value">10137.2</span>
       </li>
-      <li class="menu-item"><a class="menu-link" href="/list/index.html">Интересное</a>
-      </li>
-      <li class="menu-item"><a class="menu-link" href="#">Экономика</a>
-      </li>
-      <li class="menu-item"><a class="menu-link" href="#">Политика</a>
-      </li>
-      <li class="menu-item"><a class="menu-link" href="#">Общество</a>
-      </li>
-      <li class="menu-item"><a class="menu-link" href="#">Технологии</a>
-      </li>
-      <li class="menu-item"><a class="menu-link" href="#">Спорт</a>
-      </li>
-      <li class="menu-item"><a class="menu-link" href="#">Культура</a>
-      </li>
-      <li class="menu-item"><a class="menu-link" href="#">Происшествия</a>
-      </li>
-      <li class="menu-item"><a class="menu-link" href="#">Наука</a>
+      <li class="currency-retes-item">
+        <b class="currency-retes-type">Р</b>
+        <span class="currency-retes-value">138.26</span>
       </li>
     </ul>
-<hr class="menu-line">
 
-</div>
-</section>
+    <!-- GLOBAL SEARCH FORM -->
+    <form class="global-search-form"  action="https://echo.htmlacademy.ru" method="GET">
+      <!-- <img class="global-search-form-img" src="img/search.png" alt=""> -->
+      <input class="global-search-form-input" type="search" name="search" placeholder="Поиск" aria-label="Поиск" required>
+      </form>
+
+        <!-- LANGUAGE -->
+    <div class="lang-toggle">
+      <a class="lang-toggle-link lang-toggle-link-active" href="index.html">УЗ</a>
+      <a class="lang-toggle-link" href="index.html/ru">РУ</a>
+      </div>
+
+    <!-- SITE HEADER AUTH -->
+    <a class="button button-primary" href="#">Войти</a>
+    </div>
+    </div>
+
+      <!-- NAVBAR -->
+
+      <div class="container sitenav-container">
+        <nav class="sitenav sitenav-article ">
+          <ul class="sitenav-list">
+            <li class="sitenav-item"><a class="sitenav-link" href="/index.html">Главное</a>
+            </li>
+            <li class="sitenav-item"><a class="sitenav-link" href="list/index.html">Интересное</a>
+            </li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Экономика</a>
+            </li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Политика</a>
+            </li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Общество</a>
+            </li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Технологии</a>
+            </li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Спорт</a>
+            </li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Культура</a>
+            </li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Происшествия</a>
+            </li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Наука</a>
+            </li>
+          </ul>
+
+
+      </nav>
+
+      </div>
+    </section>
+
 
 <!-- CONTACT section -->
-<section class="world-news">
+<main class="main-content">
   <div class="container">
-
+<section class="world-news">
           <h2 class="contact-heading">Напишите нам</h2>
     <div class="layout-2-1">
 
 <div class="global-news">
-
-
-
   <div class="new-list-container">
 
 
@@ -89,55 +106,38 @@
             <input class="contact-input contact-email" type="email" placeholder="Электронная почта">
             <textarea class="contact-input textarea" name="text" placeholder="Текст" id="text" cols="696" rows="190"></textarea>
            <div class="btn">
-            <a class="login-link sub" href="#">Отправить</a>
+            <button class="button button-primary" type="button">Отправить</button>
            </div>
           </div>
-
-
-
 </div>
-
 </div>
 
 
 
 <div class="site-layout">
-<div class="site-layout-container contact-container">
+<section class="site-layout-container contact-container">
 
   <div class="site-layout-list">
   <h3 class="contact-layout-heading">Электронная почта</h3>
   <p class="contact-layout-source">info@namanganliklar24.uz</p>
-  <hr class="site-layout-link-line contact-line">
   </div>
 
   <div class="site-layout-list">
   <h3 class="contact-layout-heading">Номер телефона</h3>
   <p class="contact-layout-source">+998 88 522-54-76</p>
-  <hr class="site-layout-link-line">
   </div>
 
   <div class="site-layout-list">
     <h3 class="contact-layout-heading">Адрес</h3>
     <p class="contact-layout-source">Ташкент, площадь Мустакиллик, 6 </p>
-    <hr class="site-layout-link-line">
     </div>
-
-
-
-</div>
-
-
-
-
-</div>
-
-</div>
-
-
-
-</div>
 </section>
 
+</div>
+</div>
+</section>
+</div>
+</main>
 
 
 
@@ -215,6 +215,6 @@
 
 
 
-</main>
+
 </body>
 </html>
